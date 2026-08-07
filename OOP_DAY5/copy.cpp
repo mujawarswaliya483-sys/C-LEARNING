@@ -23,6 +23,15 @@ public:
 		this->subject=subject;
 		this->salary=salary;
 	}
+
+	Teacher(Teaher &orgobj){ //pass by referrence
+		cout<<"I am custom copy constructor...\n";
+		this->name = orgObj.name;
+        this->dep = orgObj.dept;
+        this->subject=orgObj.subject;
+        this->salary=orgObj.salary;
+	}
+	void changeDep()
 	void getInfo(){
 		cout<<"name:"<<name<<endl;
 		cout<<"dept:"<<dept<<endl;

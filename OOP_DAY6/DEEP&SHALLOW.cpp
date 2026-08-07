@@ -13,12 +13,6 @@ Student(string name,double cgpa ){
 	*cgpaPtr = cgpa;
 }
 
-// destructor
-
-~Student(){
-	cout<<"Hi i am destructor"<<endl;
-	delete cgpaPtr;
-}
 Student(Student &obj){
 	this->name=obj.name;
 	cgpaPtr = new double;
